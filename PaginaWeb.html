@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+      
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+				<li><a href="#">Carrito De compras</a></li>
+                <link rel="stylesheet" href="MenuRapido.css">
+                <link rel="stylesheet" href="FormularioDeVenta.css">
+                <link rel="stylesheet" href="estiles.css">
+				<link rel="stylesheet" href="FormularioDeCompra.css">
+				<link rel="stylesheet" href="AñadirAlCarrito.css">
+				</ul>
+        </nav>
+    </header>
+	
+	  
+    <h1>Compra los productos en venta</h1>
+	<div class="producto">
+		<h3>Mouse</h3>
+		<p>Precio: S/50</p>
+      <button onclick="alert('Se añadio a al carrito de compras')">Añadir al carrito</button>
+	  </div>
+	  <form>
+		<input type="text" id="busqueda" placeholder="Buscar productos...">
+		<button type="submit">Buscar</button>
+	  </form>
+	  
+	  
+	<form>
+		<div class="form-group">
+		  <label for="producto">Producto</label>
+		  <input type="text" class="form-control" id="producto" placeholder="Nombre del producto">
+		</div>
+		<div class="form-group">
+		  <label for="cantidad">Cantidad</label>
+		  <input type="number" class="form-control" id="cantidad" placeholder="Cantidad de productos">
+		</div>
+		<div class="form-group">
+		  <label for="direccion">Dirección de envío</label>
+		  <input type="text" class="form-control" id="direccion" placeholder="Dirección de envío">
+		</div>
+		<button onclick="alert('Gracias Por Comprar')" class="btn btn-primary">Comprar ahora</button>
+		
+	</form>
+	  
+      
+    <section class="content">
+        <h1>Bienvenido a mi sitio web</h1>
+        <p>Este es un sitio web de ejemplo creado con HTML y JavaScript.</p>
+    </section>
+    <h1>Formulario de venta</h1>
+	
+	<form>
+		<label for="nombre">Nombre del producto:</label>
+		<input type="text" id="nombre" name="nombre" required>
+
+		<label for="precio">Precio:</label>
+		<input type="number" id="precio" name="precio" step="0.01" required>
+
+		<label for="descripcion">Descripción:</label>
+		<textarea id="descripcion" name="descripcion" required></textarea>
+
+		<label for="imagen">Imagen del producto:</label>
+		<input type="file" id="imagen" name="imagen">
+
+		<label for="nombre_comprador">Nombre del comprador:</label>
+		<input type="text" id="nombre_comprador" name="nombre_comprador" required>
+
+		<label for="correo">Correo electrónico:</label>
+		<input type="email" id="correo" name="correo" required>
+
+		<label for="direccion">Dirección de envío:</label>
+		<input type="text" id="direccion" name="direccion" required>
+
+		<input type="submit" value="Vender" id="vender">
+
+	</form>
+
+
+</body>
+</html>
